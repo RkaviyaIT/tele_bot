@@ -2,6 +2,8 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from telethon import TelegramClient
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+import nltk
+nltk.download('vader_lexicon')
 
 
 TOKEN = '7718098452:AAFNngD67_ymjhO-GzRJkSnyOZ0P4N_OUPA'
